@@ -1,7 +1,8 @@
 import discord
 from discord import Intents
 from keep_alive import keep_alive
-
+coco = input("Enter here: ")
+coco = str(coco)
 intents = Intents.default()
 intents.messages = True
 intents.reactions = True
@@ -46,4 +47,4 @@ async def on_ready():
     await verification_message.pin()
 
 keep_alive()
-bot.run('MTExNTE0Nzc5ODA2MTUxNDgyMw.GPg-PM.N8WPoZrSdy8Wu9AY4sSFIjqCJF3KPY8RAbhCXo')
+bot.run(coco)
